@@ -3,6 +3,25 @@ import "./App.css"
 function App() {
   return (
     <div className="wrapper clear">
+      <div className="overlay">
+        <div className="drawer">
+          <h2>Корзина</h2>
+          <div className="cartItem d-flex align-center">
+            <img
+              className="mr-20"
+              width={70}
+              height={70}
+              src="img/sneakers/1.jpg"
+              alt="1"
+            />
+            <div className="mr-20">
+              <p className="mb-5">Мужские Кроссовки Nike Blazer Mid Suede</p>
+              <b>12 999 руб.</b>
+            </div>
+            <img className="removeBtn" src="img/x.svg" alt="x" />
+          </div>
+        </div>
+      </div>
       <header className="d-flex justify-between align-center p-40">
         <div className="d-flex align-center">
           <img width={40} height={40} src="/img/logo.png" alt="logo" />
@@ -38,7 +57,7 @@ function App() {
             <img
               width={133}
               height={112}
-              src="/img/sneakers/blazergreen.jpg"
+              src="/img/sneakers/1.jpg"
               alt="blazergreen"
             />
             <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
