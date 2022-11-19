@@ -6,7 +6,6 @@ function Drawer() {
           Корзина
           <img className="removeBtn cu-p" src="img/x.svg" alt="x" />
         </h2>
-
         <div className="items">
           <div className="cartItem d-flex align-center mb-20">
             <div

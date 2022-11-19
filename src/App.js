@@ -4,8 +4,26 @@ import Header from "./components/Header"
 import Drawer from "./components/Drawer"
 
 const arr = [
-  { name: "Мужские Кроссовки Nike Blazer Mid Suede", price: 12999 },
-  { name: "Мужские Кроссовки Nike Air Max 270", price: 15600 },
+  {
+    name: "Мужские Кроссовки Nike Blazer Mid Suede",
+    price: 12999,
+    imageUrl: "/img/sneakers/1.jpg",
+  },
+  {
+    name: "Мужские Кроссовки Nike Air Max 270",
+    price: 15600,
+    imageUrl: "/img/sneakers/2.jpg",
+  },
+  {
+    name: "Мужские Кроссовки Nike Blazer Mid Suede",
+    price: 8499,
+    imageUrl: "/img/sneakers/3.jpg",
+  },
+  {
+    name: "Кроссовки Puma X Aka Boku Future Rider",
+    price: 8999,
+    imageUrl: "/img/sneakers/4.jpg",
+  },
 ]
 
 function App() {
@@ -23,8 +41,9 @@ function App() {
         </div>
 
         <div className="sneakers d-flex">
-          <Card />
-          <Card />
+          {arr.map((obj) => (
+            <Card title={obj.name} price={obj.price} imageUrl={obj.imageUrl} />
+          ))}
         </div>
       </div>
     </div>
