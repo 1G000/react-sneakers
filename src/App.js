@@ -42,7 +42,11 @@ function App() {
 
         <div className="sneakers d-flex">
           {arr.map((obj) => (
-            <Card title={obj.name} price={obj.price} imageUrl={obj.imageUrl} />
+            <Card
+              title={obj.name}
+              price={obj.price + " руб."}
+              imageUrl={obj.imageUrl}
+            />
           ))}
         </div>
       </div>
